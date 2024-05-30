@@ -21,9 +21,9 @@ const Withdraw = () => {
                         <select name="" className='select-option' id="">
                           <option value="">Select</option>
                           <option value="Option 1">Option 1</option>
-                          <option value="Option 1">Option 1</option>
-                          <option value="Option 1">Option 1</option>
-                          <option value="Option 1">Option 1</option>
+                          <option value="Option 1">Option 2</option>
+                          <option value="Option 1">Option 3</option>
+                          <option value="Option 1">Option 4</option>
                         </select>
                     </div>
                     <div className="with-label-select">
@@ -31,9 +31,9 @@ const Withdraw = () => {
                         <select name="" className='select-option' id="">
                           <option value="">Select</option>
                           <option value="Option 1">Option 1</option>
-                          <option value="Option 1">Option 1</option>
-                          <option value="Option 1">Option 1</option>
-                          <option value="Option 1">Option 1</option>
+                          <option value="Option 1">Option 2</option>
+                          <option value="Option 1">Option 3</option>
+                          <option value="Option 1">Option 4</option>
                         </select>
                     </div>
                     <div className="with-label-select">
@@ -44,9 +44,9 @@ const Withdraw = () => {
                         <select name="" className='select-option' id="">
                           <option value="">Select</option>
                           <option value="Option 1">Option 1</option>
-                          <option value="Option 1">Option 1</option>
-                          <option value="Option 1">Option 1</option>
-                          <option value="Option 1">Option 1</option>
+                          <option value="Option 1">Option 2</option>
+                          <option value="Option 1">Option 3</option>
+                          <option value="Option 1">Option 4</option>
                         </select>
                     </div>
                     <div className="with-label-select">

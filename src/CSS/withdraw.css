@@ -1,0 +1,149 @@
+.withdraw-section{
+    position: relative;
+    width: 56.5%;
+    max-width: 767px;
+    height: 92vh;
+    text-align: center;
+    margin-top: 26px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px 4px #2c1b04;
+    overflow: hidden;
+}
+.withdraw-heading{
+    height: 90px;
+    position: relative;
+}
+.withdraw-heading h2{
+    font-size: 24.5px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: #d3d4d5;
+}
+.withdraw-content{
+    position: relative;
+    height: calc(100% - 130px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 30px;
+    padding: 1.8rem;
+    background-color: #623800;
+    box-shadow: 0px -4px 1px #a06619;
+    border-radius: 60px 60px 0 0;
+}
+.withdraw-content p{
+    color: #d6dde4;
+    letter-spacing: 0.1px;
+}
+.withdraw-form{
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;   
+    gap: 15px;
+}
+.with-label-select{
+    display: flex;
+    flex-direction: column;
+    color: #d6dde4;
+    font-size: 14px;
+}
+.addnew-label{
+    display: flex;
+    justify-content: space-between;
+}
+.amount-input{
+    height: 38px;
+    padding: 7px 12px;
+    opacity: 0.53;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.with-label-select label{
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+.withdraw-submit-btn{
+    height: 38px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.add-new-span{
+    cursor: pointer;
+}
+#open-addnew{
+    transform: scale(0);
+}
+.addnew-account-form{
+    width: 460px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 11%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+    background-color: #fff;
+    transition: 0.3s ease;
+    transform: scale(1);
+}
+.addnew-account-form h3{
+    font-size: 19px;
+    font-weight: 400;
+}
+.close-btn{
+    position: absolute;
+    right: 12px;
+    top: 17px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 1px;
+    cursor: pointer;
+}
+.close-btn span{
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 1px;
+}
+.addnew-label-input{
+    display: flex;
+    flex-direction: column;
+    font-size: 13.9px;
+}
+.addnew-label-input label{
+    font-weight: 600;
+}
+.addnew-label-input input{
+    height: 35px;
+    padding: 7px 12px;
+    /* opacity: 0.53; */
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: #623800;
+}
+.add-account-btn{
+    height: 34px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #211f1f;
+    cursor: pointer;
+}

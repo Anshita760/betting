@@ -1,0 +1,117 @@
+.menu span{
+    font-size: 2.1rem;
+    color: white;
+    cursor: pointer;
+}
+.menu-section{
+    width: 265px;
+    height: 93.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    padding: 15px 23px 25px;
+    background-color: #0b0600; 
+    box-shadow: 4px 0px 1px #a06619;
+    border-radius: 0px 16px 35px 0;
+    z-index: 1;
+    transform: translateX(-110%);
+    transition: 0.3s ease;
+}
+.close-menu-btn{
+    width: 265px;
+    height: 93.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    padding: 15px 23px 25px;
+    background-color: #0b0600; 
+    box-shadow: 4px 0px 1px #a06619;
+    border-radius: 0px 16px 35px 0;
+    z-index: 1;
+    transform: translateX(0%);
+    transition: 0.3s ease;
+}
+.menu-top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.menu-top p{
+    color: #dfa061;
+    font-size: 14px;
+}
+.close-menu{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #dfa061;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 4.1px;
+    cursor: pointer;
+}
+.close-menu span{
+    font-size: 17px;
+    font-weight: 700;
+}
+.menu-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 17px;
+    margin-left: -5px;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+}
+.link{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+.depo{
+    font-size: 21px;
+    transform: rotate(-90deg);
+}
+.with{
+    font-size: 21px;
+    transform: rotate(90deg);
+}
+.edit{
+    font-size: 21px;
+
+}
+.help{
+    font-size: 21px;
+    
+}
+.logout-btn{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    margin-left: -2px;
+}
+.logout-btn span{
+    font-size: 22px;
+    font-weight: 300;
+}

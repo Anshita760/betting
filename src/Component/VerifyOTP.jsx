@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../CSS/verifyOtp.css'
+import Forgot from '../pages/Forgot'
+import Withdraw from '../pages/Withdraw'
 
 const VerifyOTP = (props) => {
   return (
@@ -18,7 +20,7 @@ const VerifyOTP = (props) => {
                     <input type="number" />
                     <input type="number" />
                 </div>
-                <input type="submit" className='verifyOtp-btn' value="Verify code"/>
+                <input type="button" className='verifyOtp-btn' value="Verify code"/>
             </form>
         </div>
     </>

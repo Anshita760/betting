@@ -53,7 +53,7 @@
     display: flex;
     justify-content: space-between;
 }
-.amount-input{
+.withdraw-form input[type = "number"], .withdraw-form select{
     height: 38px;
     padding: 7px 12px;
     opacity: 0.53;

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.depositHistory-section{
+    position: relative;
+    width: 56.5%;
+    max-width: 767px;
+    height: 92vh;
+    text-align: center;
+    margin-top: 26px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px 4px #2c1b04;
+    overflow: hidden;
+}
+.deposit-heading{
+    margin-top: -10px;
+    position: relative;
+}
+.depositHistory-section h1{
+    font-size: 29px;
+    color: #d3d4d5;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+.table-panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0.8rem;
+    color: #d3d4d5;
+}
+.filter{
+    display: flex;
+    align-items: flex-end;
+}
+.filter span{
+    font-size: 22px;
+    font-weight: 600;
+}
+.filter p{
+    font-size: 13px;
+    font-weight: 600;
+}
+.user-filling-select{
+    display: flex;
+    gap: 20px;
+}
+.user-filling-select select{
+    border-radius: none;
+}

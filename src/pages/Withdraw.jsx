@@ -51,9 +51,9 @@ const Withdraw = () => {
                     </div>
                     <div className="with-label-select">
                         <label htmlFor="">Amount</label>
-                        <input type="number" className='amount-input'/>
+                        <input type="number"/>
                     </div>
-                    <input type="submit" className='withdraw-submit-btn' value="Withdraw"/>
+                    <input type="button" className='withdraw-submit-btn' value="Withdraw"/>
                 </form>
                 {otp ? (
                     <form className="addnew-account-form" id={addnew}>
@@ -77,7 +77,7 @@ const Withdraw = () => {
                         <label htmlFor="">Account number</label>
                         <input type="number" />
                     </div>
-                    <input type="submit" onClick={()=>{openOtp(false)}} className='add-account-btn' value="Add account"/>
+                    <input type="button" onClick={()=>{openOtp(false)}} className='add-account-btn' value="Add account"/>
                     </form>
                 ):(
                     <VerifyOTP openOtp = {openOtp}/>

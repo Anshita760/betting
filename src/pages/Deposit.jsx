@@ -70,7 +70,7 @@ const Deposite = () => {
               <label htmlFor="">Amount</label>
               <input type="number" />
             </div>
-            <input type="submit" value="Deposit" className='deposit-submit-btn'/>
+            <input type="button" value="Deposit" className='deposit-submit-btn'/>
           </form>
         </div>
       </div>

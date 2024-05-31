@@ -70,11 +70,12 @@
     border-radius: 10px;
     cursor: pointer;
 }
-.openVerify-window-active{
+.openVerify-window{
     transition: .3s ease;
     transform: scale(0);
+    position: absolute;
 }
-.openVerify-window{
+.openVerify-window-active{
     position: absolute;
     top: 34%;
     left: 20%;

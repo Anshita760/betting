@@ -20,10 +20,10 @@ const Forgot = () => {
                         <label htmlFor="">Phone number</label>
                         <input type="number" placeholder=''/>
                     </div>
-                    <input type="submit" className='otp-btn' onClick={()=>{openVerifyWindow(true)}} value="Request OTP"/>
+                    <input type="button" className='otp-btn' onClick={()=>{openVerifyWindow(true)}} value="Request OTP"/>
 
-                    <div className={verifyWindow ? "openVerify-window" : "openVerify-window-active"} >
-                        <VerifyOTP/>
+                    <div className={verifyWindow ? "openVerify-window-active" : "openVerify-window"} >
+                        <VerifyOTP openVerifyWindow = {openVerifyWindow}/>
                     </div>
                 </form>
             </div>

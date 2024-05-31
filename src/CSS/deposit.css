@@ -83,7 +83,7 @@
     color: #d6dde4;
     font-size: 14px;
 }
-.depo-label-input input[type = "number"], select{
+.depo-label-input input[type = "number"], .depo-label-input select{
     height: 38px;
     padding: 7px 12px;
     opacity: 0.53;

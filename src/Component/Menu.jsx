@@ -18,15 +18,15 @@ const Menu = () => {
                 </div>
                 <p>Welcome, {user}</p>
                 <div className="menu-links">
-                    <NavLink className="link">
+                    <NavLink to="/DepositHistory" className="link">
                         <span class="material-symbols-outlined depo">logout</span>
                         <span>Deposit history</span>
                     </NavLink>
-                    <NavLink className="link">
+                    <NavLink to='/WithdrawHistory' className="link">
                         <span class="material-symbols-outlined with">login</span>
                         <span>Withdrawal history</span>
                     </NavLink>
-                    <NavLink className="link">
+                    <NavLink to='/EditProfile' className="link">
                         <span class="material-symbols-outlined edit">person_edit</span>
                         <span>Edit profile</span>
                     </NavLink>

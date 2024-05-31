@@ -17,9 +17,9 @@ const Home = () => {
                         <button className='login-signup-btn' onClick={()=>(setsignup(false))}>Signup</button>
                     </div>
                 </div>
-                <a href="#" className="logo" target='_blank'>
+                <NavLink className="logo">
                     <img src="https://staging.cloud1.me/betting/assets/images/CO-Chat.png2.png" alt="" />
-                </a>
+                </NavLink>
                 <div className="deposit-withdraw">
                     <NavLink to="/Deposit" className='depo-with-btn deposit-btn'>
                         <img src="assets/move_item.png" alt="" />
@@ -57,7 +57,7 @@ const Home = () => {
                             </label>
                             <input type="password" placeholder='Please enter password'/>                            
                         </div>
-                        <input type="submit" className='login-register-btn' value="Login" />
+                        <input type="button" className='login-register-btn' value="Login" />
                         <NavLink to="/Forget" className='forget-pass-btn'>Forgot password?</NavLink>
                     </form>
                 </div>
@@ -89,7 +89,7 @@ const Home = () => {
                             </label>
                             <input type="password" placeholder='Please enter confirm password'/>                            
                         </div>
-                        <input type="submit" className='login-register-btn' value="Register" />
+                        <input type="button" className='login-register-btn' value="Register" />
                     </form>
                 </div>
             </div>

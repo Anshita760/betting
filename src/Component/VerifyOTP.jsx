@@ -3,11 +3,11 @@ import '../CSS/verifyOtp.css'
 import Forgot from '../pages/Forgot'
 import Withdraw from '../pages/Withdraw'
 
-const VerifyOTP = (props) => {
+const VerifyOTP = ({openVerifyWindow}) => {
   return (
     <>
         <div className="verifyOtp-comp">
-            <div className="otp-back-arrow" onClick={()=>{props.openOtp(true)}}>
+            <div className="otp-back-arrow" onClick={()=>{openVerifyWindow(false)}}>
                 <span className="material-symbols-outlined">arrow_back_ios</span>
             </div>
             <form className='otp-form'>

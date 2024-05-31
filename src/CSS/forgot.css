@@ -37,6 +37,7 @@
     font-weight: 400 !important;
 }
 .reset-form{
+    position: relative;
     width: 410px;
     display: flex;
     flex-direction: column;
@@ -77,8 +78,8 @@
 }
 .openVerify-window-active{
     position: absolute;
-    top: 34%;
-    left: 20%;
+    top: -32%;
+    left: -6%;
     transform: scale(1);
     transition: .3s ease;
 }

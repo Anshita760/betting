@@ -19,7 +19,7 @@
 }
 .depositHistory-section h1{
     font-size: 29px;
-    color: #d3d4d5;
+    color: #e0e1e2;
     font-weight: 400;
     letter-spacing: 0.2px;
 }
@@ -27,8 +27,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 0.8rem;
-    color: #d3d4d5;
+    padding: 1.7rem 0.8rem 1rem;
+    color: #e0e1e2;
 }
 .filter{
     display: flex;
@@ -47,5 +47,8 @@
     gap: 20px;
 }
 .user-filling-select select{
-    border-radius: none;
+    padding: 4px 20px;
+    background-color: #e0e1e2;
+    font-weight: 600;
+    font-size: 12px;
 }

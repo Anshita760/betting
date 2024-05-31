@@ -3,9 +3,9 @@ import '../CSS/withdraw.css'
 import BackLogout from '../Component/BackLogout'
 import VerifyOTP from '../Component/VerifyOTP'
 
-const Withdraw = () => {
+const Withdraw = ({verifyWindow, openVerifyWindow}) => {
     const [addnew, openAddnew] = useState("open-addnew")
-    const [otp, openOtp] = useState(true)
+    
   return (
     <>
         <div className="withdraw-section">
@@ -55,7 +55,9 @@ const Withdraw = () => {
                     </div>
                     <input type="button" className='withdraw-submit-btn' value="Withdraw"/>
                 </form>
-                {otp ? (
+                {verifyWindow ? (
+                    <VerifyOTP/>
+                ):(
                     <form className="addnew-account-form" id={addnew}>
                     <h3>Add new account</h3>
                     <div className="close-btn" onClick={()=>{openAddnew("open-addnew")}}>
@@ -77,10 +79,8 @@ const Withdraw = () => {
                         <label htmlFor="">Account number</label>
                         <input type="number" />
                     </div>
-                    <input type="button" onClick={()=>{openOtp(false)}} className='add-account-btn' value="Add account"/>
+                    <input type="button" onClick={()=>{openVerifyWindow(true)}} className='add-account-btn' value="Add account"/>
                     </form>
-                ):(
-                    <VerifyOTP openOtp = {openOtp}/>
                 )}
             </div>
         </div>

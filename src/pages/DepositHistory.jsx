@@ -1,6 +1,7 @@
 import React from 'react'
 import '../CSS/depositHistory.css'
 import BackLogout from '../Component/BackLogout'
+import { DateRangePicker, Stack } from 'rsuite';
 
 const DepositHistory = () => {
   return (
@@ -22,6 +23,10 @@ const DepositHistory = () => {
                         <option value="Test 123">Test 123</option>
                         <option value="Test 123">Test 123</option>
                     </select>
+                    <Stack>
+                    <DateRangePicker/>
+                    </Stack>
+                    {/* <input type="date" min="5/25/2024" max="6/15/2024"/> */}
                     <select name="" id="">
                         <option value="By Username">By Status</option>
                         <option value="Test 123">Pending</option>

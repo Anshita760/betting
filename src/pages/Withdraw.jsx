@@ -59,27 +59,27 @@ const Withdraw = ({verifyWindow, openVerifyWindow}) => {
                     <VerifyOTP/>
                 ):(
                     <form className="addnew-account-form" id={addnew}>
-                    <h3>Add new account</h3>
-                    <div className="close-btn" onClick={()=>{openAddnew("open-addnew")}}>
-                        <span class="material-symbols-outlined">close</span>
-                    </div>
-                    <div className='addnew-label-input'>
-                        <label htmlFor="">Account name</label>
-                        <input type="text" />
-                    </div>
-                    <div className='addnew-label-input'>
-                        <label htmlFor="">Bank name</label>
-                        <input type="text" />
-                    </div>
-                    <div className='addnew-label-input'>
-                        <label htmlFor="">IFSC code</label>
-                        <input type="text" />
-                    </div>
-                    <div className='addnew-label-input'>
-                        <label htmlFor="">Account number</label>
-                        <input type="number" />
-                    </div>
-                    <input type="button" onClick={()=>{openVerifyWindow(true)}} className='add-account-btn' value="Add account"/>
+                        <h3>Add new account</h3>
+                        <div className="close-btn" onClick={()=>{openAddnew("open-addnew")}}>
+                            <span class="material-symbols-outlined">close</span>
+                        </div>
+                        <div className='addnew-label-input'>
+                            <label htmlFor="">Account name</label>
+                            <input type="text" />
+                        </div>
+                        <div className='addnew-label-input'>
+                            <label htmlFor="">Bank name</label>
+                            <input type="text" />
+                        </div>
+                        <div className='addnew-label-input'>
+                            <label htmlFor="">IFSC code</label>
+                            <input type="text" />
+                        </div>
+                        <div className='addnew-label-input'>
+                            <label htmlFor="">Account number</label>
+                            <input type="number" />
+                        </div>
+                        <input type="button" onClick={()=>{openVerifyWindow(true)}} className='add-account-btn' value="Add account"/>
                     </form>
                 )}
             </div>

@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import '../CSS/verifyOtp.css'
-import Forgot from '../pages/Forgot'
-import Withdraw from '../pages/Withdraw'
 
-const VerifyOTP = ({openVerifyWindow}) => {
+const VerifyOTP = ({verifyWindow, openVerifyWindow}) => {
   return (
     <>
         <div className="verifyOtp-comp">

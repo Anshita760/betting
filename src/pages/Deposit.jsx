@@ -14,7 +14,7 @@ const Deposite = () => {
               <h5>Bank name</h5>
               <span className="material-symbols-outlined copy-icon">content_copy</span>
             </div>
-            <p>SBI Bank</p>
+            <span>SBI Bank</span>
           </div>
           <div className="bank-detail">
             <button className="copied-btn">Copied!</button>
@@ -22,7 +22,7 @@ const Deposite = () => {
               <h5>Account name</h5>
               <span className="material-symbols-outlined copy-icon">content_copy</span>
             </div>
-            <p>ABC Enterprises</p>
+            <span>ABC Enterprises</span>
           </div>
           <div className="bank-detail">
             <button className="copied-btn">Copied!</button>
@@ -30,7 +30,7 @@ const Deposite = () => {
               <h5>Account number</h5>
               <span className="material-symbols-outlined copy-icon">content_copy</span>
             </div>
-            <p>99009900899009900</p>
+            <span>99009900899009900</span>
           </div>
           <div className="bank-detail">
             <button className="copied-btn">Copied!</button>
@@ -38,7 +38,7 @@ const Deposite = () => {
               <h5>IFSC Code</h5>
               <span className="material-symbols-outlined copy-icon">content_copy</span>
             </div>
-            <p>SBIN0000123</p>
+            <span>SBIN0000123</span>
           </div>
           <div className="bank-detail">
             <button className="copied-btn">Copied!</button>
@@ -46,7 +46,7 @@ const Deposite = () => {
               <h5>UPI Id</h5>
               <span className="material-symbols-outlined copy-icon">content_copy</span>
             </div>
-            <p>91000000@ybl</p>
+            <span>91000000@ybl</span>
           </div>
         </div>
         <div className="deposit-content">

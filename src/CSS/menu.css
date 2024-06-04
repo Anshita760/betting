@@ -77,11 +77,10 @@
     letter-spacing: 0.1px;
 }
 .link{
-    color: #fff;
+    color: #fff !important;
     display: flex;
     align-items: center;
     gap: 12px;
-    text-decoration: none;
 }
 .depo{
     font-size: 21px;

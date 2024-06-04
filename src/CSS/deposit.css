@@ -1,6 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .deposit-section{
     position: relative;
-    width: 56.5%;
+    width: 770px;
     max-width: 767px;
     height: 92vh;
     text-align: center;
@@ -30,6 +35,7 @@
     font-size: 9px;
     font-weight: 600;
     background-color: #f8f9fa;
+    color: #000000;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -41,15 +47,17 @@
     font-size: 15px;
 }
 .detail-heading h5{
-    font-weight: 300;
+    font-size: 12.5px;
+    font-weight: 400;
 }
 .copy-icon{
-    font-size: 15px;
+    font-size: 15.5px !important;
     cursor: pointer;
 }
-.bank-detail p{
+.bank-detail span{
     font-size: 11px;
     color: #d6dde4;
+    margin-top: -8px;
 }
 .deposit-content{
     position: relative;
@@ -107,11 +115,10 @@
 }
 input[type="file"]::file-selector-button{
     background-color: #000000;
-    padding: 7px 10px;
+    padding: 5px 10px;
     color: #ffffff;
     font-size: 15px;
     letter-spacing: 0.2px;
-    opacity: 10 !important;
     border: none;
     outline: none;
     border-radius: 3px;

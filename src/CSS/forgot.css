@@ -1,6 +1,6 @@
 .reset-pass-section{
     position: relative;
-    width: 56.5%;
+    width: 770px;
     max-width: 767px;
     height: 92vh;
     text-align: center;
@@ -14,7 +14,7 @@
     position: relative;
 }
 .reset-heading h2{
-    font-size: 24.5px;
+    font-size: 24px;
     font-weight: 400;
     letter-spacing: 0.2px;
     color: #d3d4d5;
@@ -26,7 +26,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 28px;
+    gap: 14px;
     background-color: #623800;
     box-shadow: 0px -4px 1px #a06619;
     border-radius: 60px 60px 0 0;
@@ -67,20 +67,24 @@
     border: none;
     outline: none;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
 }
 .openVerify-window{
+    position: absolute;
+    top: -100%;
+    left: -32%;
+    right :0;
+    bottom: 0;
     transition: .3s ease;
     transform: scale(0);
-    position: absolute;
 }
 .openVerify-window-active{
     position: absolute;
     top: -100%;
     left: -32%;
-    right: 0;
+    right :0;
     bottom: 0;
     transform: scale(1);
     transition: .3s ease;

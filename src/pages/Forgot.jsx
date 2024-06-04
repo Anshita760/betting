@@ -21,7 +21,7 @@ const Forgot = ({verifyWindow, openVerifyWindow}) => {
                     </div>
                     <input type="button" onClick={()=>{openVerifyWindow(true)}} className='otp-btn' value="Request OTP"/>
                     <div className={verifyWindow ? "openVerify-window-active" : "openVerify-window"} >
-                        <VerifyOTP/>
+                        <VerifyOTP openVerifyWindow={openVerifyWindow}/>
                     </div>
                 </form>
             </div>

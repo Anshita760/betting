@@ -56,7 +56,7 @@ const Withdraw = ({verifyWindow, openVerifyWindow}) => {
                     <input type="button" className='withdraw-submit-btn' value="Withdraw"/>
                 </form>
                 {verifyWindow ? (
-                    <VerifyOTP/>
+                    <VerifyOTP openVerifyWindow={openVerifyWindow}/>
                 ):(
                     <form className="addnew-account-form" id={addnew}>
                         <h3>Add new account</h3>

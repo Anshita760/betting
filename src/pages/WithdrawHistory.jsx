@@ -27,7 +27,7 @@ const WithdrawHistory = () => {
                         <option value="Test 123">Test 123</option>
                         <option value="Test 123">Test 123</option>
                     </select>
-                    <DateRangePicker className='date-picker-comp' value={0} placeholder="05/25/2024 - 06/15/2024"/>
+                    <DateRangePicker className='date-picker-comp'placeholder="05-25-2024 - 06-15-2024"/>
                     <select name="" id="" className='select-option'>
                         <option value="By Username">By Status</option>
                         <option value="Test 123">Pending</option>

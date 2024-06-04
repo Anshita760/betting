@@ -93,19 +93,24 @@
 }
 .depo-label-input input[type = "number"], .depo-label-input select{
     height: 38px;
-    padding: 7px 12px;
+    padding: 5px 10px;
     opacity: 0.53;
     border-radius: 10px;
     border: none;
     outline: none;
     font-size: 15px;
+    font-weight: 400;
+}
+.depo-label-input input:focus, .depo-label-input select:focus{
+    border: 2px solid #000;
+    outline: 1px solid #fff;
 }
 .depo-label-input label{
     font-size: 15px;
     margin-bottom: 2px;
 }
 .input-file{
-    height: 51px;
+    height: 50px;
     padding: 10px;
     background-color: #fff;
     opacity: 0.53;
@@ -115,7 +120,7 @@
 }
 input[type="file"]::file-selector-button{
     background-color: #000000;
-    padding: 5px 10px;
+    padding: 4px 8px;
     color: #ffffff;
     font-size: 15px;
     letter-spacing: 0.2px;

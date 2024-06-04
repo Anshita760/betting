@@ -93,7 +93,7 @@
     transform: rotate(90deg);
     transition: 100ms ease;
 }
-.depo-with-btn:hover.deposite-btn img{
+.depo-with-btn:hover.deposit-btn img{
     transform: scale(1.2) rotate(-90deg);
 }
 .depo-with-btn:hover.withdraw-btn img{
@@ -234,6 +234,10 @@
     font-weight: 600;
     font-size: 16px;
 }
+.num-pass:focus{
+    border: 2px solid #000;
+    outline: 1px solid #fff;
+}
 .num-pass input::placeholder{
     font-size: 13px;
     font-weight: 400;
@@ -252,6 +256,10 @@
     border-radius: 6px;
     border: none;
     outline: none;
+    transition: .2s ease;
+}
+.login-register-btn:hover{
+    background-color: #623800;
 }
 .forget-pass-btn{
     font-size: 14px;

@@ -8,6 +8,7 @@
     top: 33.5%;
     left: 20%;
     background-color: #fff;
+    z-index: 10;
 }
 .otp-back-arrow{
     height: 24px;

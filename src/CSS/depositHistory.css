@@ -17,13 +17,13 @@
     margin-top: -5px;
     position: relative;
 }
-.depositHistory-section h1{
+.deposit-heading h1{
     font-size: 29px;
     color: #e0e1e2;
     font-weight: 400;
     letter-spacing: 0.2px;
 }
-.table-panel{
+.deposit-table-panel{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -84,34 +84,42 @@
 }
 /* ---------------------- */
 
-.table-section{
+.deposit-table-section{
     height: 100%;
     padding: 0 10px;
     /* border: solid red; */
 }
-.table-content{
+.deposit-table-content{
     height: 100%;
 }
-.table-custom{
+.deposit-table-custom{
     height: 72%;
     overflow-y: auto;
-    /* padding-bottom: 100px; */
+    padding-bottom: 55px;
     /* border: solid blue; */
 }
-.table-custom::-webkit-scrollbar {
-    width: 5px;               /* width of the entire scrollbar */
+.deposit-table-custom::-webkit-scrollbar {
+    width: 4px;               /* width of the entire scrollbar */
 }
-.table-custom::-webkit-scrollbar-track {
+.deposit-table-custom::-webkit-scrollbar-track {
     background: #e4e2e2;         /* color of the tracking area */
     border-radius: 20px;
 }
-.table-custom::-webkit-scrollbar-thumb {
-    background-color: #b63f0f;    /* color of the scroll thumb */
+.deposit-table-custom::-webkit-scrollbar-thumb {
+    background-color: #997404;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
 }
+.green{
+    color: green !important;
+}
+
+/* ------------Bootstrap classes------------ */
 .table{
     text-align: left;
     background-color: #212529 !important;
+}
+.table tbody tr{
+    font-size: 15px !important;
 }
 .table.table-striped{
     margin-bottom: 0;
@@ -119,8 +127,9 @@
 .table>:not(caption)>*>*{
     background-color: #212529 !important;
     border-bottom: solid #666666;
-    color: #e0e1e2 !important;
+    color: #fff !important;
 }
 .table-striped>tbody>tr:nth-of-type(odd)>*{
     background-color: #3a3a3a85 !important;
 }
+/* -------------------- */

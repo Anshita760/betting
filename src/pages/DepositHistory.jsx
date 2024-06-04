@@ -14,8 +14,8 @@ const DepositHistory = () => {
             <div className="deposit-heading">
                 <h1>DEPOSIT HISTORY</h1>
             </div>
-            <div className='table-section'>
-                <div className="table-panel">
+            <div className='deposit-table-section'>
+                <div className="deposit-table-panel">
                 <div className="filter">
                     <span class="material-symbols-outlined">filter_alt</span>
                     <p>Filters</p>
@@ -32,13 +32,13 @@ const DepositHistory = () => {
                         <option value="By Username">By Status</option>
                         <option value="Test 123">Pending</option>
                         <option value="Test 123">Rejected</option>
-                        <option value="Test 123">Success</option>
+                        <option value="Test 123" className='green'>Success</option>
                     </select>
                 </div>
                 </div>
-                <div className='table-content'>
-                <div className="table-custom">
-                    <Table striped>
+                <div className='deposit-table-content'>
+                    <div className="deposit-table-custom">
+                        <Table striped>
                     <thead>
                         <tr>
                           <th>No.</th>
@@ -56,7 +56,7 @@ const DepositHistory = () => {
                           <td>Test123</td>
                           <td>@Test123</td>
                           <td>1000</td>
-                          <td>Success</td>
+                          <td className='green'>Success</td>
                         </tr>
                         <tr>
                           <td>2</td>
@@ -64,7 +64,7 @@ const DepositHistory = () => {
                           <td>Test123</td>
                           <td>@Test123</td>
                           <td>1000</td>
-                          <td>Success</td>
+                          <td className='green'>Success</td>
                         </tr>
                         <tr>
                           <td>3</td>
@@ -72,7 +72,7 @@ const DepositHistory = () => {
                           <td>Test123</td>
                           <td>@Test123</td>
                           <td>1000</td>
-                          <td>Success</td>
+                          <td className='green'>Success</td>
                         </tr>
                         <tr>
                           <td>4</td>
@@ -80,7 +80,7 @@ const DepositHistory = () => {
                           <td>Test123</td>
                           <td>@Test123</td>
                           <td>1000</td>
-                          <td>Success</td>
+                          <td className='green'>Success</td>
                         </tr>
                         <tr>
                           <td>5</td>
@@ -88,7 +88,7 @@ const DepositHistory = () => {
                           <td>Test123</td>
                           <td>@Test123</td>
                           <td>1000</td>
-                          <td>Success</td>
+                          <td className='green'>Success</td>
                         </tr>
                         <tr>
                           <td>6</td>
@@ -96,7 +96,7 @@ const DepositHistory = () => {
                           <td>Test123</td>
                           <td>@Test123</td>
                           <td>1000</td>
-                          <td>Success</td>
+                          <td className='green'>Success</td>
                         </tr>
                         <tr>
                           <td>7</td>
@@ -104,7 +104,7 @@ const DepositHistory = () => {
                           <td>Test123</td>
                           <td>@Test123</td>
                           <td>1000</td>
-                          <td>Success</td>
+                          <td className='green'>Success</td>
                         </tr>
                         <tr>
                           <td>8</td>
@@ -112,7 +112,7 @@ const DepositHistory = () => {
                           <td>Test123</td>
                           <td>@Test123</td>
                           <td>1000</td>
-                          <td>Success</td>
+                          <td className='green'>Success</td>
                         </tr>
                         <tr>
                           <td>9</td>
@@ -120,7 +120,7 @@ const DepositHistory = () => {
                           <td>Test123</td>
                           <td>@Test123</td>
                           <td>1000</td>
-                          <td>Success</td>
+                          <td className='green'>Success</td>
                         </tr>
                         <tr>
                           <td>10</td>
@@ -128,11 +128,11 @@ const DepositHistory = () => {
                           <td>Test123</td>
                           <td>@Test123</td>
                           <td>1000</td>
-                          <td>Success</td>
+                          <td className='green'>Success</td>
                         </tr>
                     </tbody>
-                    </Table>
-                </div>
+                        </Table>
+                    </div>
                 </div>
             </div>
         </div>

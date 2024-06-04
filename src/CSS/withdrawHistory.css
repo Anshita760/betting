@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.withdrawHistory-section{
+    position: relative;
+    width: 770px;
+    max-width: 767px;
+    height: 92vh;
+    text-align: center;
+    margin-top: 26px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px 4px #2c1b04;
+    overflow: hidden;
+}
+.withdraw-heading{
+    height: fit-content;
+    margin-top: -5px;
+    position: relative;
+}
+.withdrawHistory-section h1{
+    font-size: 29px;
+    color: #e0e1e2;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+.withdraw-table-panel{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5rem 0px 1rem;
+    color: #e0e1e2;
+}
+.filter{
+    display: flex;
+    /* align-items: flex-end; */
+}
+.filter span{
+    font-size: 22px;
+    font-weight: 600;
+}
+.filter p{
+    font-size: 13px;
+    font-weight: 600;
+}
+.user-filling-select{
+    display: flex;
+    gap: 20px;
+}
+.select-option{
+    padding: 4px 20px;
+    background-color: #e0e1e2;
+    font-weight: 600;
+    font-size: 12px;
+    color: black !important;
+}
+/* ---------- rsuit classes ---------- */
+.rs-input-group{
+    width: 12.2rem !important;
+    background-color: #e0e1e2 !important;
+    border-radius: 0px !important;
+    border: 1px solid gray !important;
+}
+.rs-input-group input{
+    background-color: #e0e1e2 !important;
+}
+.rs-input{
+    color: #000 !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    padding-left: 20px !important;
+}
+.rs-input::placeholder{
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+.rs-input-group-addon{
+    display: none !important;
+}
+.rs-picker-daterange-header{
+    display: none;
+}
+.rs-input-group:focus-within.rs-input-group-focus{
+    visibility: hidden;
+}
+/* ---------------------- */
+
+.withdraw-table-section{
+    height: 100%;
+    padding: 0 10px;
+    /* border: solid red; */
+}
+.withdraw-table-content{
+    height: 100%;
+}
+.withdraw-table-custom{
+    height: 72%;
+    overflow-y: auto;
+    padding-bottom: 55px;
+    /* border: solid blue; */
+}
+.withdraw-table-custom::-webkit-scrollbar {
+    width: 4px;               /* width of the entire scrollbar */
+}
+.withdraw-table-custom::-webkit-scrollbar-track {
+    background: #e4e2e2;         /* color of the tracking area */
+    border-radius: 20px;
+}
+.withdraw-table-custom::-webkit-scrollbar-thumb {
+    background-color: #997404;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+/* ------------Bootstrap classes------------ */
+.table{
+    text-align: left;
+    background-color: #212529 !important;
+}
+.table tbody tr{
+    font-size: 15px !important;
+}
+.table.table-striped{
+    margin-bottom: 0;
+}
+.table>:not(caption)>*>*{
+    background-color: #212529 !important;
+    border-bottom: 1px solid #535353;
+    color: #fff !important;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>*{
+    background-color: #3a3a3a85 !important;
+}
+/* -------------------- */

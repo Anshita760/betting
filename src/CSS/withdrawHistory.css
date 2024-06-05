@@ -171,7 +171,17 @@
         flex-direction: column;
         gap: 10px;
     }
-    
+    .rs-picker-daterange-panel{
+        min-width: none;
+    }
+    .rs-calendar{
+        margin: 0;
+    }
+    .rs-picker-daterange-calendar-group{
+        min-width: 430px;
+        height: fit-content;
+        flex-direction: column;
+    }
     .table.table-striped{
         width: 250%;
     }

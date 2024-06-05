@@ -61,7 +61,7 @@ const Withdraw = ({verifyWindow, openVerifyWindow}) => {
                     <form className="addnew-account-form" id={addnew}>
                         <h3>Add new account</h3>
                         <div className="close-btn" onClick={()=>{openAddnew("open-addnew")}}>
-                            <span class="material-symbols-outlined">close</span>
+                            <span className="material-symbols-outlined">close</span>
                         </div>
                         <div className='addnew-label-input'>
                             <label htmlFor="">Account name</label>

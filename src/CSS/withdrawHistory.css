@@ -98,11 +98,10 @@
 .withdraw-table-custom{
     height: 72%;
     overflow-y: auto;
-    padding-bottom: 55px;
-    /* border: solid blue; */
 }
 .withdraw-table-custom::-webkit-scrollbar {
     width: 4px;               /* width of the entire scrollbar */
+    height: 4px;
 }
 .withdraw-table-custom::-webkit-scrollbar-track {
     background: #e4e2e2;         /* color of the tracking area */

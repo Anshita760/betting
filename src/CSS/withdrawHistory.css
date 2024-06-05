@@ -45,7 +45,6 @@
     margin: 0;
 }
 .user-filling-select{
-    width: 100%;
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -148,13 +147,13 @@
         font-size: 25px;
     }
     .withdraw-table-panel{
-        gap: 30px;
+        row-gap: 10px;
+        column-gap: 30px;
     }
     .select-option{
         padding: 4px 10px;
     }
     .rs-picker-popup{
-        /* width: 260px; */
         overflow-x: auto;
     }
     .rs-input-group{
@@ -182,6 +181,8 @@
     }
     .withdraw-table-panel{
         flex-direction: column;
-        gap: 10px;
+    }
+    .user-filling-select{
+        width: 100%;
     }
 }

@@ -153,6 +153,10 @@
     .select-option{
         padding: 4px 10px;
     }
+    .rs-picker-popup{
+        /* width: 260px; */
+        overflow-x: auto;
+    }
     .rs-input-group{
         width: 10rem !important;
     }
@@ -163,6 +167,15 @@
         width: 140%;
     }
 }
+@media screen and (max-width: 481px) {
+    .rs-picker-popup{
+        width: 260px;
+        transform: translateX(-55%);    
+    }
+    .table.table-striped{
+        width: 250%;
+    }
+}
 @media screen and (max-width: 320px) {
     .withdrawHistory-heading h1{
         font-size: 22px;
@@ -170,19 +183,5 @@
     .withdraw-table-panel{
         flex-direction: column;
         gap: 10px;
-    }
-    .rs-picker-daterange-panel{
-        min-width: none;
-    }
-    .rs-calendar{
-        margin: 0;
-    }
-    .rs-picker-daterange-calendar-group{
-        min-width: 430px;
-        height: fit-content;
-        flex-direction: column;
-    }
-    .table.table-striped{
-        width: 250%;
     }
 }

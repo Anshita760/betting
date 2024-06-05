@@ -19,26 +19,26 @@ const Menu = () => {
                 <p>Welcome, {user}</p>
                 <div className="menu-links">
                     <NavLink to="/DepositHistory" className="link">
-                        <span class="material-symbols-outlined depo">logout</span>
+                        <span className="material-symbols-outlined depo">logout</span>
                         <span>Deposit history</span>
                     </NavLink>
                     <NavLink to='/WithdrawHistory' className="link">
-                        <span class="material-symbols-outlined with">login</span>
+                        <span className="material-symbols-outlined with">login</span>
                         <span>Withdrawal history</span>
                     </NavLink>
                     <NavLink to='/EditProfile' className="link">
-                        <span class="material-symbols-outlined edit">person_edit</span>
+                        <span className="material-symbols-outlined edit">person_edit</span>
                         <span>Edit profile</span>
                     </NavLink>
                     <NavLink className="link">
-                        <span class="material-symbols-outlined help">help</span>
+                        <span className="material-symbols-outlined help">help</span>
                         <span>Help</span>
                     </NavLink>
                 </div>
             </div>
             <div className="logout">
                 <button className='logout-btn'>
-                    <span class="material-symbols-outlined">power_settings_new</span>
+                    <span className="material-symbols-outlined">power_settings_new</span>
                     Logout
                 </button>
             </div>

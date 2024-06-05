@@ -14,7 +14,7 @@ const Withdraw = ({verifyWindow, openVerifyWindow}) => {
                 <h2>WITHDRAW</h2>
             </div>
             <div className="withdraw-content">
-                <p>Fill the details below to initiate widrawal</p>
+                <p>Fill the details below to initiate withdrawal</p>
                 <form className='withdraw-form'>
                     <div className="with-label-select">
                         <label htmlFor="">Select sitename</label>

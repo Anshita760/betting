@@ -67,3 +67,20 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: #211f1f;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 581px) {
+    .verifyOtp-comp{
+        width: 92%;
+        left: 4%;
+    }
+    .otp-form{
+        width: 100%;
+        gap: 8px;
+    }
+    .otp-input{
+        width: 98%;
+        justify-content: space-between;
+        gap: 0;
+    }
+}

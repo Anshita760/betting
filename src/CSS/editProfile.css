@@ -113,3 +113,59 @@
     cursor: pointer;
     background-color: #fff;
 }
+
+
+@media screen and (max-width: 767px){
+    .editProfile-content{
+        padding: 2.5rem 2rem;
+    }
+    .edit-form{
+        overflow: scroll;
+    }
+}
+@media screen and (max-width: 581px) {
+    .editProfile-section{
+        margin-top: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .editProfile-heading{
+        padding-bottom: 2.5rem;
+        margin-top: 10px;
+    }
+    .editProfile-heading h1{
+        font-size: 22px;
+    }
+    .editProfile-content{
+        padding: 36px 28px;
+    }
+    .edit-form{
+        width: 100%;
+    }
+    .edit-form h3{
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+    .update-profile{
+        gap: 7px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .edit-logout-btn{
+        padding: 3px 8px 4px;
+        font-size: 12px;
+    }
+    .edit-form h3{
+        font-size: 20px;
+    }
+    .update-btn{
+        border-radius: 5px;
+        margin-top: 0;
+    }
+    .edit-label-input input{
+        height: 33px;
+        padding: 5px 7px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+}

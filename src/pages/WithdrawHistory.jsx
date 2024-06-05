@@ -11,7 +11,7 @@ const WithdrawHistory = () => {
     <>
       <div className="withdrawHistory-section">
             <BackLogout/>
-            <div className="withdraw-heading">
+            <div className="withdrawHistory-heading">
                 <h1>WITHDRAWAL HISTORY</h1>
             </div>
             <div className='withdraw-table-section'>
@@ -44,100 +44,129 @@ const WithdrawHistory = () => {
                 </div>
                 <div className='withdraw-table-content'>
                     <div className="withdraw-table-custom">
-                        <Table striped>
-                    <thead>
-                        <tr>
-                          <th>No.</th>
-                          <th>Date</th>
-                          <th>Sitename</th>
-                          <th>Username</th>
-                          <th>Account number</th>
-                          <th>Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>10/10/2024</td>
-                          <td>Sitename here</td>
-                          <td>Test123</td>
-                          <td>9990009990009900</td>
-                          <td>100000</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>10/10/2024</td>
-                          <td>Sitename here</td>
-                          <td>Test123</td>
-                          <td>9990009990009900</td>
-                          <td>100000</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>10/10/2024</td>
-                          <td>Sitename here</td>
-                          <td>Test123</td>
-                          <td>9990009990009900</td>
-                          <td>100000</td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>10/10/2024</td>
-                          <td>Sitename here</td>
-                          <td>Test123</td>
-                          <td>9990009990009900</td>
-                          <td>100000</td>
-                        </tr>
-                        <tr>
-                          <td>5</td>
-                          <td>10/10/2024</td>
-                          <td>Sitename here</td>
-                          <td>Test123</td>
-                          <td>9990009990009900</td>
-                          <td>100000</td>
-                        </tr>
-                        <tr>
-                          <td>6</td>
-                          <td>10/10/2024</td>
-                          <td>Sitename here</td>
-                          <td>Test123</td>
-                          <td>9990009990009900</td>
-                          <td>100000</td>
-                        </tr>
-                        <tr>
-                          <td>7</td>
-                          <td>10/10/2024</td>
-                          <td>Sitename here</td>
-                          <td>Test123</td>
-                          <td>9990009990009900</td>
-                          <td>100000</td>
-                        </tr>
-                        <tr>
-                          <td>8</td>
-                          <td>10/10/2024</td>
-                          <td>Sitename here</td>
-                          <td>Test123</td>
-                          <td>9990009990009900</td>
-                          <td>100000</td>
-                        </tr>
-                        <tr>
-                          <td>9</td>
-                          <td>10/10/2024</td>
-                          <td>Sitename here</td>
-                          <td>Test123</td>
-                          <td>9990009990009900</td>
-                          <td>100000</td>
-                        </tr>
-                        <tr>
-                          <td>10</td>
-                          <td>10/10/2024</td>
-                          <td>Sitename here</td>
-                          <td>Test123</td>
-                          <td>9990009990009900</td>
-                          <td>100000</td>
-                        </tr>
-                    </tbody>
-                        </Table>
+                      <Table striped>
+                        <thead>
+                          <tr>
+                            <th>No.</th>
+                            <th>Date</th>
+                            <th>Sitename</th>
+                            <th>Username</th>
+                            <th>Account number</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                          <tr>
+                            <td>12</td>
+                            <td>10/10/2024</td>
+                            <td>Sitename here</td>
+                            <td>Test123</td>
+                            <td>9990009990009900</td>
+                            <td>100000</td>
+                            <td>Success</td>
+                          </tr>
+                        </tbody>
+                      </Table>
                     </div>
                 </div>
             </div>

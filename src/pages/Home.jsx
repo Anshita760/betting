@@ -10,7 +10,7 @@ const Home = () => {
     <>
         <div className='home-page'>
             <div className="home-bg">
-                <div className="navbar">
+                <div className="home-navbar">
                     <Menu/>
                     <div className="login-signup">
                         <button className='login-signup-btn' onClick={()=>(setlogin(false))}>Login</button>
@@ -70,7 +70,7 @@ const Home = () => {
                     <form className='login-signup-form'>
                         <div className='num-pass'>
                             <label htmlFor="">
-                                <span class="material-symbols-outlined user">person</span>                            </label>
+                                <span className="material-symbols-outlined user">person</span>                            </label>
                             <input type="text" placeholder='Please enter full name'/>
                         </div>
                         <div className='num-pass'>

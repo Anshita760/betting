@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .withdraw-section{
     position: relative;
     width: 770px;
@@ -12,6 +17,7 @@
 .withdraw-heading{
     padding: 8px 0 3.3rem;
     position: relative;
+    margin-top: -5px;
 }
 .withdraw-heading h2{
     font-size: 24.5px;
@@ -105,6 +111,7 @@
 .addnew-account-form h3{
     font-size: 19px;
     font-weight: 400;
+    margin: 0;
 }
 .close-btn{
     position: absolute;
@@ -152,4 +159,70 @@
     color: #fff;
     background-color: #211f1f;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 1024px){
+    .withdraw-form{
+        overflow-y: scroll;
+    }
+    .withdraw-submit-btn{
+        padding: 5px 0;
+    }
+    .addnew-account-form{
+        top: 3%;
+    }
+}
+@media screen and (max-width: 581px) {
+    .withdraw-section{
+        margin-top: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .withdraw-heading{
+        padding: 8px 0 1.8rem;
+        margin-top: 10px;
+    }
+    .withdraw-heading h2{
+        font-size: 22px;
+    }
+    .withdraw-content{
+        height: calc(100% - 110px);
+        padding: 30px;
+        gap: 8px;
+    }
+    .withdraw-form{
+        width: 100%;
+        gap: 10px;
+    }
+    .addnew-account-form{
+        width: 92%;
+        top: 12%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .withdraw-submit-btn{
+        border-radius: 5px;
+        margin-top: 0;
+    }
+    .with-label-select input[type = "number"], .with-label-select select{
+        height: 33px;
+        padding: 5px 7px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .input-file{
+        height: 37px;
+        padding: 8px 7px;
+        background-color: #fff;
+        opacity: 0.53;
+        font-size: 12px;
+        border-radius: 5px;
+        color: #000000;
+    }
+    input[type="file"]::file-selector-button{
+        padding: 2px 5px;
+        color: #ffffff;
+        font-size: 12px;
+    }
 }

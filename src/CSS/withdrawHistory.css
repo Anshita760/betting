@@ -13,12 +13,12 @@
     box-shadow: 0px 0px 7px 4px #2c1b04;
     overflow: hidden;
 }
-.withdraw-heading{
+.withdrawHistory-heading{
     height: fit-content;
     margin-top: -5px;
     position: relative;
 }
-.withdrawHistory-section h1{
+.withdrawHistory-heading h1{
     font-size: 29px;
     color: #e0e1e2;
     font-weight: 400;
@@ -33,7 +33,7 @@
 }
 .filter{
     display: flex;
-    /* align-items: flex-end; */
+    align-items: flex-end;
 }
 .filter span{
     font-size: 22px;
@@ -42,10 +42,13 @@
 .filter p{
     font-size: 13px;
     font-weight: 600;
+    margin: 0;
 }
 .user-filling-select{
+    width: 100%;
     display: flex;
     gap: 20px;
+    overflow-x: auto;
 }
 .select-option{
     padding: 4px 20px;
@@ -131,3 +134,45 @@
     background-color: #3a3a3a85 !important;
 }
 /* -------------------- */
+
+
+@media screen and (max-width: 581px) {
+    .withdrawHistory-section{
+        margin-top: 0;
+        border-radius: 0;
+    }
+    .withdrawHistory-heading{
+        margin-top: 15px;
+    }
+    .withdrawHistory-heading h1{
+        font-size: 25px;
+    }
+    .withdraw-table-panel{
+        gap: 30px;
+    }
+    .select-option{
+        padding: 4px 10px;
+    }
+    .rs-input-group{
+        width: 10rem !important;
+    }
+    .rs-input{
+        padding-left: 7px !important;
+    }
+    .table.table-striped{
+        width: 140%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .withdrawHistory-heading h1{
+        font-size: 22px;
+    }
+    .withdraw-table-panel{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .table.table-striped{
+        width: 250%;
+    }
+}

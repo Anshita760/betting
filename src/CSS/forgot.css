@@ -91,3 +91,18 @@
     transform: scale(1);
     transition: .3s ease;
 }
+
+
+@media screen and (max-width: 581px) {
+    .openVerify-window{
+        left: 0;
+    }
+    .openVerify-window-active{
+        left: 0;
+    }
+}
+@media screen and (max-width: 481px) {
+    .reset-form{
+        width: 95%;
+    }
+}

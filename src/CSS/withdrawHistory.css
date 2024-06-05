@@ -169,7 +169,7 @@
 @media screen and (max-width: 481px) {
     .rs-picker-popup{
         width: 260px;
-        transform: translateX(-55%);    
+        transform: translateX(-65%);    
     }
     .table.table-striped{
         width: 250%;

@@ -146,15 +146,17 @@
         margin-left: -6px;
     }
 }
-@media screen and (max-width: 320px) {
-    .menu span{
-        font-size: 1.7rem;
-    }
+@media screen and (max-width: 481px) {
     .menu-section{
         width: 90%;
     }
     .close-menu-btn{
         width: 90%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .menu span{
+        font-size: 1.7rem;
     }
     .menu-links{
         font-size: 14px;

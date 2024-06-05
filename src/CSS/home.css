@@ -337,6 +337,51 @@
         transform: translateY(11%);
     }
 }
+@media screen and (max-width: 481px) {
+    .logo{
+        margin-top: -10px;
+    }
+    .logo img{
+        width: 100px;
+    }
+    .login-section{
+        width: 95%;
+    }
+    .login-section-open{
+        width: 95%;
+        transform: translateY(13%);
+    }
+    .signup-section{
+        width: 95%;
+    }
+    .signup-section-open{
+        width: 95%;
+        transform: translateY(10.5%);
+    }
+    .login-section img{
+        width: 100px;
+    }
+    .login-section-open img{
+        width: 100px;
+    }
+    .signup-section img{
+        width: 100px;
+    }
+    .signup-section-open img{
+        width: 100px;
+    }
+    .login-signup-heading{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .num-pass{
+        height: 25px;
+        padding: 17px 8px;
+    }
+    .login-register-btn{
+        height: 35px;
+    }
+}
 @media screen and (max-width: 320px) {
     .home-navbar{
         padding: 7px 8px;
@@ -344,12 +389,6 @@
     .login-signup-btn{
         padding: 3px 7px 5px;
         font-size: 12px;
-    }
-    .logo{
-        margin-top: -10px;
-    }
-    .logo img{
-        width: 100px;
     }
     .depo-with-btn{
         width: 30%;
@@ -386,41 +425,10 @@
     .btn-instruct span{
         font-size: 12px;
     }
-    .login-section{
-        width: 95%;
-    }
     .login-section-open{
-        width: 95%;
         transform: translateY(22%);
     }
-    .signup-section{
-        width: 95%;
-    }
     .signup-section-open{
-        width: 95%;
-        transform: translateY(17%);
-    }
-    .login-section img{
-        width: 100px;
-    }
-    .login-section-open img{
-        width: 100px;
-    }
-    .signup-section img{
-        width: 100px;
-    }
-    .signup-section-open img{
-        width: 100px;
-    }
-    .login-signup-heading{
-        font-size: 15px;
-        margin-top: 10px;
-    }
-    .num-pass{
-        height: 25px;
-        padding: 17px 8px;
-    }
-    .login-register-btn{
-        height: 35px;
+        transform: translateY(18%);
     }
 }

@@ -176,7 +176,7 @@ input[type="file"]::file-selector-button{
 }
 @media screen and (max-width: 481px) {
     .deposit-form{
-        height: 200px;
+        height: 100%;
         overflow-y: auto;
     }
     .bank-detail{

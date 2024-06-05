@@ -140,10 +140,10 @@
 
 @media screen and (max-width: 1024px) {
     .rs-picker-popup{
-        transform: translate(-15%);   
+        transform: translate(-35%);   
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .rs-picker-popup{
         transform: translateX(-36%);    
     }

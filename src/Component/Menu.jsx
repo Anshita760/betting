@@ -37,10 +37,10 @@ const Menu = () => {
                 </div>
             </div>
             <div className="logout">
-                <button className='logout-btn'>
+                <NavLink to="/" className='logout-btn'>
                     <span className="material-symbols-outlined">power_settings_new</span>
                     Logout
-                </button>
+                </NavLink>
             </div>
         </div>
     </>

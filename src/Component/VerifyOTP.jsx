@@ -25,7 +25,7 @@ const VerifyOTP = ({openVerifyWindow}) => {
         }
     };
 
-    const handleInput = (index, event) => {
+    const handleInput = (event) => {
         const { value } = event.target;
         const newInput = value.slice(0, 1); // Take only the first character
         event.target.value = newInput; // Update the input value
@@ -47,7 +47,7 @@ const VerifyOTP = ({openVerifyWindow}) => {
                         value={digit}
                         onChange={(event) => handleChange(index, event)}
                         onKeyDown={(event) => handleKeyDown(index, event)}
-                        onInput={(event) => handleInput(index, event)} // Handle input event
+                        onInput={(event) => handleInput(event)} // Handle input event
                         ref={inputRefs[index]}
                        
                     />

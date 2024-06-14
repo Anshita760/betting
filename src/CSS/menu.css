@@ -108,7 +108,7 @@
     align-items: center;
     gap: 11px;
     background-color: transparent;
-    color: #fff;
+    color: #fff !important;
     border: none;
     outline: none;
     font-size: 16px;

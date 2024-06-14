@@ -1,0 +1,640 @@
+{
+	"info": {
+		"_postman_id": "2a7d833e-155c-4d51-92aa-b2a3b0309836",
+		"name": "CoChat9",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24197576"
+	},
+	"item": [
+		{
+			"name": "Login & SignUp",
+			"item": [
+				{
+					"name": "User Sign Up",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"let firstName = pm.variables.replaceIn(\"{{$randomFirstName}}\")",
+									"let lastName = pm.variables.replaceIn(\"{{$randomLastName}}\")",
+									"let phoneNo = pm.variables.replaceIn(\"{{$randomPhoneNumber}}\").replaceAll(/-/g,\"\")",
+									"",
+									"pm.environment.set(\"phoneNumber\", phoneNo)",
+									"pm.environment.set(\"firstName\", firstName)",
+									"pm.environment.set(\"lastName\",lastName)",
+									"pm.environment.set(\"password\",`91${phoneNo}`)",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"full_name\" : \"{{firstName}} {{lastName}}\",\n    \"phone_number\" : \"{{phoneNumber}}\",\n    \"password\" : \"{{password}}\",\n    \"device_type\" : \"Web\", // Web, Android\n    \"device_token\" : \"\", // Required for Android\n    \"device_id\" : \"\" // Required for Android\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}signup",
+							"host": [
+								"{{base_url}}signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Sign Up OTP",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phone_number\" : \"{{phoneNumber}}\",\n    \"otp\" : \"532655\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}signup/verify",
+							"host": [
+								"{{base_url}}signup"
+							],
+							"path": [
+								"verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"userToken\", jsonData.data?.login_session_key)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phone_number\" : \"4334433434\",\n    \"password\" : \"123456\",\n    \"device_type\" : \"Android\", // Web, Android\n    \"device_token\" : \"test token\", // Required for Android\n    \"device_id\" : \"test device id\" // Required for Android\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}login",
+							"host": [
+								"{{base_url}}login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile & Password",
+			"item": [
+				{
+					"name": "Change Password",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"current_password\" : \"915463213097\",\n    \"new_password\" : \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user/change_password",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"change_password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"full_name\" : \"Sorav G\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user/update_profile",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"update_profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Device Details",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_type\" : \"Android\", // Web, Android\n    \"device_token\" : \"test token 123\",\n    \"device_id\" : \"test device id\" // Required for Android\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user/update_device_details",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"update_device_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Logout",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}login/logout",
+							"host": [
+								"{{base_url}}login"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deposits",
+			"item": [
+				{
+					"name": "Add New Deposit",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sitename_guid",
+									"value": "6e1a6c1f-f140-0a87-1f82-64f7a9d6516b",
+									"type": "text"
+								},
+								{
+									"key": "username_guid",
+									"value": "9e279903-0f8f-8daf-bc70-1d6f1f297204",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "slip",
+									"type": "file",
+									"src": "/run/user/1000/doc/1bb3b1a6/logo.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}deposit/add",
+							"host": [
+								"{{base_url}}deposit"
+							],
+							"path": [
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Withdraw",
+			"item": [
+				{
+					"name": "Add New Withdraw",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sitename_guid\" : \"6e1a6c1f-f140-0a87-1f82-64f7a9d6516b\",\n    \"username_guid\":\"9e279903-0f8f-8daf-bc70-1d6f1f297204\",\n    \"bank_guid\":\"2dc3085d-336f-7244-d7d5-555c26fa7b5b\",\n    \"amount\" : 100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}withdraw/add",
+							"host": [
+								"{{base_url}}withdraw"
+							],
+							"path": [
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Banks",
+			"item": [
+				{
+					"name": "Add New Bank",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"let firstName = pm.variables.replaceIn(\"{{$randomFirstName}}\")",
+									"pm.variables.get(\"variable_key\");",
+									"let lastName = pm.variables.replaceIn(\"{{$randomLastName}}\")",
+									"let accountNo = Math.floor(Math.random()*1E16);",
+									"",
+									"pm.environment.set(\"firstName\", firstName)",
+									"pm.environment.set(\"lastName\",lastName)",
+									"pm.environment.set(\"accountNo\",accountNo)",
+									"",
+									"",
+									"const bankNames = [\"Bank of Baroda\",\"Axis Bank\",\"HDFC Bank\",\"ICICI Bank\",\"Yes Bank\"];",
+									"const random = Math.floor(Math.random() * bankNames.length);",
+									"const bankName = bankNames[random];",
+									"pm.environment.set(\"bankName\",bankName)",
+									"",
+									"const matches = bankName.match(/\\b(\\w)/g);",
+									"const acronym = matches.join('');",
+									"pm.environment.set(\"ifscCode\",`${acronym.toUpperCase()}000${accountNo.toString().substring(0,4)}`);",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"bankGuid\", jsonData.data?.bank_guid)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\" : \"{{bankName}}\",\n    \"account_name\" : \"{{firstName}} {{lastName}}\",\n    \"account_no\" : \"{{accountNo}}\",\n    \"ifsc_code\" : \"{{ifscCode}}\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}bank/add",
+							"host": [
+								"{{base_url}}bank"
+							],
+							"path": [
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Bank Account",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_guid\" : \"{{bankGuid}}\",\n    \"otp\" : \"642305\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}bank/verify",
+							"host": [
+								"{{base_url}}bank"
+							],
+							"path": [
+								"verify"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

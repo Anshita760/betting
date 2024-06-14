@@ -6,6 +6,11 @@ import Menu from '../Component/Menu'
 const Home = () => {
     const [loginOpen, setlogin] = useState(true)
     const [signupOpen, setsignup] = useState(true)
+      
+    fetch("http://54.187.117.89/cochat9_cloud1/api/signup")
+        .then((response) => {response.json(); console.log(response)})
+        // .then((result) => console.log(result))
+        .catch((error) => console.error("Request Failed!", error))
   return (
     <>
         <div className='home-page'>
@@ -70,7 +75,7 @@ const Home = () => {
                     <form className='login-signup-form'>
                         <div className='num-pass'>
                             <label htmlFor="">
-                                <span className="material-symbols-outlined user">person</span>                            </label>
+                                <span className="material-symbols-outlined user">person</span>                          </label>
                             <input type="text" placeholder='Please enter full name'/>
                         </div>
                         <div className='num-pass'>

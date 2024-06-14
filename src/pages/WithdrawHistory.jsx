@@ -17,7 +17,7 @@ const WithdrawHistory = () => {
             <div className='withdraw-table-section'>
                 <div className="withdraw-table-panel">
                   <div className="filter">
-                    <span class="material-symbols-outlined">filter_alt</span>
+                    <span className="material-symbols-outlined">filter_alt</span>
                     <p>Filters</p>
                   </div>
                   <div className="user-filling-select">

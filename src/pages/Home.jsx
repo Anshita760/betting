@@ -5,14 +5,12 @@ import Menu from '../Component/Menu'
 import LoginForm from '../Component/LoginForm'
 import SignupForm from '../Component/SignupForm'
 
-const Home = (props) => {
+const Home = ({setStatus}) => {
     const [loginOpen, setlogin] = useState(true)
     const [signupOpen, setsignup] = useState(true)
-    const [status, setStatus] = useState('')
+    const [Snumber, setSnumber] = useState('')
+    const [Spass, setSpass] = useState('')
 
-    setTimeout(()=>{
-        setStatus(false)
-    }, 3000)
   return (
     <>
         <div className='home-page'>
@@ -24,7 +22,6 @@ const Home = (props) => {
                         <button className='login-signup-btn' onClick={()=>(setsignup(false))}>Signup</button>
                     </div>
                 </div>
-                {status ? <p className='red-alert'>{status}</p> : " "}
                 <NavLink className="logo">
                     <img src="https://staging.cloud1.me/betting/assets/images/CO-Chat.png2.png" alt="" />
                 </NavLink>
@@ -51,16 +48,18 @@ const Home = (props) => {
                 <LoginForm 
                     loginOpen = {loginOpen} 
                     setlogin = {setlogin} 
-                    setStatus = {setStatus} 
-                    verifyWindow = {props.verifyWindow} 
-                    openVerifyWindow = {props.openVerifyWindow} 
+                    setStatus = {setStatus}
+                    Snumber = {Snumber}
+                    Spass = {Spass}
                 />
                 <SignupForm 
                     signupOpen = {signupOpen} 
                     setsignup = {setsignup} 
-                    setStatus = {setStatus} 
-                    verifyWindow = {props.verifyWindow} 
-                    openVerifyWindow = {props.openVerifyWindow} 
+                    setStatus = {setStatus}
+                    Snumber = {Snumber}
+                    setSnumber = {setSnumber}
+                    Spass = {Spass}
+                    setSpass = {setSpass}
                 />
             </div>
         </div>

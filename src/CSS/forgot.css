@@ -75,7 +75,7 @@
     position: absolute;
     z-index: 10;
     top: -100%;
-    left: -32%;
+    left: -6%;
     right :0;
     bottom: 0;
     transition: .3s ease;
@@ -85,7 +85,7 @@
     position: absolute;
     z-index: 10;
     top: -100%;
-    left: -32%;
+    left: -6%;
     right :0;
     bottom: 0;
     transform: scale(1);

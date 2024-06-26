@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.signup-section{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    bottom: 17rem;
+    border-radius: 40px 40px 0 0;
+    padding: 2rem 1.2rem 1rem;
+    box-shadow: 0 -7px 0px #1b1b1b;
+    transform: translateY(110%);
+    transition: 0.3s ease;
+}
+.user{
+    font-size: 22px;
+    font-weight: 600;
+}
+.signup-section-open{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    bottom: 17rem;
+    border-radius: 40px 40px 0 0;
+    padding: 2.2rem 1.2rem 1.2rem;
+    box-shadow: 0 -7px 0px #1b1b1b;
+    transform: translateY(0);
+    z-index: 2;
+    transition: 0.3s ease;
+}
+.signup-verify{
+    position: absolute;
+    left: 20%;
+}

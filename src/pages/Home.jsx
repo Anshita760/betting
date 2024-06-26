@@ -2,15 +2,17 @@ import React, { useState } from 'react'
 import '../CSS/home.css'
 import { NavLink } from 'react-router-dom'
 import Menu from '../Component/Menu'
+import LoginForm from '../Component/LoginForm'
+import SignupForm from '../Component/SignupForm'
 
-const Home = () => {
+const Home = (props) => {
     const [loginOpen, setlogin] = useState(true)
     const [signupOpen, setsignup] = useState(true)
-      
-    fetch("http://54.187.117.89/cochat9_cloud1/api/signup")
-        .then((response) => {response.json(); console.log(response)})
-        // .then((result) => console.log(result))
-        .catch((error) => console.error("Request Failed!", error))
+    const [status, setStatus] = useState('')
+
+    setTimeout(()=>{
+        setStatus(false)
+    }, 3000)
   return (
     <>
         <div className='home-page'>
@@ -22,6 +24,7 @@ const Home = () => {
                         <button className='login-signup-btn' onClick={()=>(setsignup(false))}>Signup</button>
                     </div>
                 </div>
+                {status ? <p className='red-alert'>{status}</p> : " "}
                 <NavLink className="logo">
                     <img src="https://staging.cloud1.me/betting/assets/images/CO-Chat.png2.png" alt="" />
                 </NavLink>
@@ -37,7 +40,7 @@ const Home = () => {
                 </div>
             </div> 
             <div className="download">
-                <p>Welcome to Co Chat 9.COM</p>
+                <p className='download-p'>Welcome to Co Chat 9.COM</p>
                 <a href='#' className='download-btn'>
                     <img src="https://staging.cloud1.me/betting/assets/images/andoid-app.png" alt="" />
                     <div className="btn-instruct">
@@ -45,58 +48,20 @@ const Home = () => {
                         <span>Click here to download</span>
                     </div>
                 </a>
-                <div className={loginOpen ? "login-section" : "login-section-open"}>
-                    <div className="cross" onClick={()=>(setlogin(true))}>
-                        <span className="material-symbols-outlined">close</span>
-                    </div>
-                    <img src="https://staging.cloud1.me/betting/assets/images/CO-Chatdark.png" alt="" />
-                    <span className='login-signup-heading'>Login With Mobile Number</span>
-                    <form className='login-signup-form'>
-                        <div className='num-pass'>
-                            <label htmlFor="">+91</label>
-                            <input type="text" placeholder='Please enter 10-digit mobile number'/>
-                        </div>
-                        <div className="num-pass">
-                            <label htmlFor="">
-                                <span className="material-symbols-outlined lock">lock</span>
-                            </label>
-                            <input type="password" placeholder='Please enter password'/>                            
-                        </div>
-                        <input type="button" className='login-register-btn' value="Login" />
-                        <NavLink to="/Forget" className='forget-pass-btn'>Forgot password?</NavLink>
-                    </form>
-                </div>
-                <div className={signupOpen ? "signup-section" : "signup-section-open"}>
-                    <div className="cross" onClick={()=>(setsignup(true))}>
-                        <span className="material-symbols-outlined">close</span>
-                    </div>
-                    <img src="https://staging.cloud1.me/betting/assets/images/CO-Chatdark.png" alt="" />
-                    <span className='login-signup-heading'>Registration</span>
-                    <form className='login-signup-form'>
-                        <div className='num-pass'>
-                            <label htmlFor="">
-                                <span className="material-symbols-outlined user">person</span>                          </label>
-                            <input type="text" placeholder='Please enter full name'/>
-                        </div>
-                        <div className='num-pass'>
-                            <label htmlFor="">+91</label>
-                            <input type="text" placeholder='Please enter 10-digit mobile number'/>
-                        </div>
-                        <div className="num-pass">
-                            <label htmlFor="">
-                                <span className="material-symbols-outlined lock">lock</span>
-                            </label>
-                            <input type="password" placeholder='Please enter password'/>                            
-                        </div>
-                        <div className="num-pass">
-                            <label htmlFor="">
-                                <span className="material-symbols-outlined lock">lock</span>
-                            </label>
-                            <input type="password" placeholder='Please enter confirm password'/>                            
-                        </div>
-                        <input type="button" className='login-register-btn' value="Register" />
-                    </form>
-                </div>
+                <LoginForm 
+                    loginOpen = {loginOpen} 
+                    setlogin = {setlogin} 
+                    setStatus = {setStatus} 
+                    verifyWindow = {props.verifyWindow} 
+                    openVerifyWindow = {props.openVerifyWindow} 
+                />
+                <SignupForm 
+                    signupOpen = {signupOpen} 
+                    setsignup = {setsignup} 
+                    setStatus = {setStatus} 
+                    verifyWindow = {props.verifyWindow} 
+                    openVerifyWindow = {props.openVerifyWindow} 
+                />
             </div>
         </div>
     </>

@@ -80,11 +80,13 @@
     color: #d3d4d5;
 }
 .deposit-form{
-    width: 410px;
+    width: 420px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     text-align: left;
     gap: 15px;
+    overflow-y: scroll;
 }
 .depo-label-input{
     display: flex;
@@ -130,7 +132,7 @@ input[type="file"]::file-selector-button{
     border-radius: 3px;
 }
 .deposit-submit-btn{
-    height: 38px;
+    padding: 10px;
     border: none;
     outline: none;
     font-size: 15px;

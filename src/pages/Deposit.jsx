@@ -53,7 +53,17 @@ const Deposite = () => {
           <h2>DEPOSIT</h2>
           <form className="deposit-form">
             <div className="depo-label-input">
-              <label htmlFor="">Select username</label>
+              <label htmlFor="">Select Sitename</label>
+              <select name="" className='select-option' id="">
+                <option value="">Select</option>
+                <option value="Option 1">Option 1</option>
+                <option value="Option 1">Option 2</option>
+                <option value="Option 1">Option 3</option>
+                <option value="Option 1">Option 4</option>
+              </select>
+            </div>
+            <div className="depo-label-input">
+              <label htmlFor="">Select Username</label>
               <select name="" className='select-option' id="">
                 <option value="">Select</option>
                 <option value="Option 1">Option 1</option>

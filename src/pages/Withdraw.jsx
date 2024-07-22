@@ -17,7 +17,7 @@ const Withdraw = ({verifyWindow, openVerifyWindow, setStatus}) => {
                 <p>Fill the details below to initiate withdrawal</p>
                 <form className='withdraw-form'>
                     <div className="with-label-select">
-                        <label htmlFor="">Select sitename</label>
+                        <label htmlFor="">Select Sitename</label>
                         <select name="" className='select-option' id="">
                           <option value="">Select</option>
                           <option value="Option 1">Option 1</option>
@@ -27,7 +27,7 @@ const Withdraw = ({verifyWindow, openVerifyWindow, setStatus}) => {
                         </select>
                     </div>
                     <div className="with-label-select">
-                        <label htmlFor="">Select username</label>
+                        <label htmlFor="">Select Username</label>
                         <select name="" className='select-option' id="">
                           <option value="">Select</option>
                           <option value="Option 1">Option 1</option>

@@ -42,11 +42,13 @@
     letter-spacing: 0.1px;
 }
 .withdraw-form{
-    width: 410px;
+    width: 420px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     text-align: left;   
     gap: 15px;
+    overflow-y: scroll;
 }
 .with-label-select{
     display: flex;
@@ -78,7 +80,7 @@
     margin-bottom: 2px;
 }
 .withdraw-submit-btn{
-    height: 38px;
+    padding: 10px;
     margin-top: 10px;
     border: none;
     outline: none;

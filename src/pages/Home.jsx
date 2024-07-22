@@ -38,13 +38,13 @@ const Home = ({setStatus}) => {
             </div> 
             <div className="download">
                 <p className='download-p'>Welcome to Co Chat 9.COM</p>
-                <a href='#' className='download-btn'>
+                <button className='download-btn'>
                     <img src="https://staging.cloud1.me/betting/assets/images/andoid-app.png" alt="" />
                     <div className="btn-instruct">
                         <h4>DOWNLOAD ANDROID APP</h4>
                         <span>Click here to download</span>
                     </div>
-                </a>
+                </button>
                 <LoginForm 
                     loginOpen = {loginOpen} 
                     setlogin = {setlogin} 

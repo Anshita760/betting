@@ -93,6 +93,7 @@
     height: 40px;
     padding: 10px 12px;
     font-size: 14px;
+    color: #000;
     opacity: 0.53;
     border-radius: 10px;
     border: none;
@@ -113,6 +114,7 @@
     cursor: pointer;
     background-color: #fff;
 }
+
 
 
 @media screen and (max-width: 768px){

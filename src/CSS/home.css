@@ -128,7 +128,8 @@
     padding: 10px 20px;
     background-color: #fff;
     border-radius: 20px;
-    text-decoration: none;
+    border: none;
+    outline: none;
 }
 .download-btn img{
     width: 28px;

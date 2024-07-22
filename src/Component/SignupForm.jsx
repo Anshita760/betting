@@ -34,7 +34,6 @@ const SignupForm = ({signupOpen, setsignup, setStatus, Snumber, Spass, setSnumbe
                 if(result.status == 200){
                     setStatus(result.message)
                     setSignupVerify(true)
-                    localStorage.setItem("data", raw)
                 }
                 else if (result.status == 500){
                     setStatus(result.message)

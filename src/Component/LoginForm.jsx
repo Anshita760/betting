@@ -1,20 +1,18 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import "../CSS/loginForm.css"
-import { data } from 'jquery'
 
 const LoginForm = ({loginOpen, setlogin, setStatus}) => {
-    const [Lnumber, setLnumber] = useState('')
-    const [Lpass, setLpass] = useState('')
+    const [Lnumber, setLnumber] = useState()
+    const [Lpass, setLpass] = useState()
 
-    const data = JSON.parse(localStorage.getItem("data"))
     function loginStatus(){
         const myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
 
         const raw = JSON.stringify({
-            "phone_number": data.phone_number,
-            "password": data.password,
+            "phone_number": Lnumber,
+            "password": Lpass,
             "device_type": "Web",
             "device_token": "test token",
             "device_id": "test device id"
@@ -26,10 +24,10 @@ const LoginForm = ({loginOpen, setlogin, setStatus}) => {
             body: raw,
             redirect: "follow"
         };
-    
         fetch("http://54.187.117.89/cochat9_cloud1/api/login", requestOptions)
             .then((response) => response.json())
             .then((result) => {
+                console.log(result)
                 if(result.status == 200){
                     setStatus(result.message)
                     localStorage.setItem("login_session_key", JSON.stringify(result.data))
@@ -42,9 +40,7 @@ const LoginForm = ({loginOpen, setlogin, setStatus}) => {
             .catch((error) => console.error(error));
     }
     function handleLogin(){
-        if(Lnumber === data.phone_number && Lpass === data.password){
-            loginStatus()
-        }
+        loginStatus()
     }
   return (
     <>

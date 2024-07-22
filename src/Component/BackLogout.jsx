@@ -38,7 +38,7 @@ const BackLogout = ({setStatus}) => {
                     <span className="material-symbols-outlined back-arrow">arrow_left_alt</span>
                     Back
                 </NavLink>
-                <NavLink className='back-logout-btn' onClick={()=>handleLogout()}>Logout</NavLink>
+                <NavLink className='back-logout-btn' onClick={()=> handleLogout()}>Logout</NavLink>
             </div>
         </div>
     </>

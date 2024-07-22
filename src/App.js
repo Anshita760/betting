@@ -38,7 +38,7 @@ function App() {
         <Route path='/DepositHistory' element={<DepositHistory/>}/>
         <Route path='/WithdrawHistory' element={<WithdrawHistory/>}/>
         <Route path='/VerifyOTP' element={<VerifyOTP verifyWindow = {verifyWindow} openVerifyWindow = {openVerifyWindow}/>}/>
-        <Route path='/EditProfile' element={<EditProfile/>}/>
+        <Route path='/EditProfile' element={<EditProfile status = {status} setStatus = {setStatus}/>}/>
       </Routes>
     </div>
   );
